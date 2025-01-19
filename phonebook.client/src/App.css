@@ -19,7 +19,7 @@
 }
 
 .App {
-    min-width: 100vh;
+    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@
 .add-contact-button {
     font-size: 1.3em;
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--quaternary-color);
     padding: 0.625em 0.9375em;
     border: none;
     cursor: pointer;
@@ -58,10 +58,9 @@
 
 .text-center {
     text-align: center;
-}
-
-.text-danger {
-    color: red;
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--quaternary-color);
 }
 
 .contact-list {
@@ -247,11 +246,16 @@
 
 @media (max-width: 600px) {
     .page {
-        padding: 1em;
+        padding: .5em;
+    }
+
+    .add-contact {
+        justify-content: end;
+        align-items: end;
     }
 
     .add-contact-button {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .contact-name {
@@ -270,11 +274,6 @@
         font-size: 0.9em;
     }
 
-    .form-container {
-        width: 90%;
-        padding: 2em 1em;
-    }
-
         .form-container h1 {
             font-size: 1.5em;
         }
@@ -285,10 +284,67 @@
 
     .contact-item {
         flex-direction: column;
+        align-items: start;
         gap: 0.2em;
     }
 
     .details-row {
         flex-direction: column;
+    }
+
+    .search-bar {
+        padding: 0.3em 0.5em;
+    }
+
+    .search-bar input {
+        line-height: 0.7em;
+        font-size: 0.6em;
+        width: 130px;
+    }
+
+    .form-page {
+        flex-direction: column;
+        padding: 1em .5em;
+    }
+
+    .back-arrow {
+        top: 2%;
+        left: 5%;
+        font-size: 0.9em;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 1.5em .5em;
+        box-shadow: none;
+    }
+
+        .form-container h1 {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+    .form-group {
+        align-items: flex-start;
+        margin-bottom: .5em;
+    }
+
+    .form-icon {
+        margin-bottom: 0.5em;
+    }
+
+    .form-container input {
+        font-size: 0.9em;
+        padding: 0.5em;
+        width: 100%;
+    }
+
+    .submit-row {
+        justify-content: center;
+    }
+
+    .submit-button {
+        font-size: 0.9em;
+        padding: 0.6em 1.2em;
     }
 }
