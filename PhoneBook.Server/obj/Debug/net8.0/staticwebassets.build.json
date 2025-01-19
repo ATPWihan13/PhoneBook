@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "VoZj8LmSzfge3SOCS9jg0+VbJIXDN+6DalCE+6ciOCM=",
+  "Source": "PhoneBook.Server",
+  "BasePath": "_content/PhoneBook.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\User\\Downloads\\PhoneBook\\phonebook.client\\phonebook.client.esproj",
+      "Version": 2,
+      "Source": "phonebook.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
